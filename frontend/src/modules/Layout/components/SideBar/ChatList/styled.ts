@@ -22,9 +22,7 @@ export const ChatListItem = styled.li<{ $active: boolean }>`
     const currentColor = $active ? theme.colors.accent : theme.colors.primary;
     return css`
       background-color: ${currentColor};
-      color: ${
-        $active ? theme.colors.accentContrast : theme.colors.primaryContrast
-      }
+      color: ${$active ? theme.colors.accentContrast : theme.colors.textDark};
       &:hover {
         background-color: ${applyOpacity(currentColor, 0.8)};
       }

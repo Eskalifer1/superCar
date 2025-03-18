@@ -1,7 +1,7 @@
 import axios from "axios";
 import { toast } from "react-hot-toast";
 
-const baseURL = "http://localhost:8000";
+const baseURL = import.meta.env.VITE_BACKEND_URL;
 
 export const backend = axios.create({
   baseURL,
@@ -9,7 +9,7 @@ export const backend = axios.create({
     "Content-Type": "application/json",
   },
   adapter: "fetch",
-  responseType: 'stream'
+  responseType: "stream",
 });
 
 backend.interceptors.response.use(

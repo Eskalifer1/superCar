@@ -10,7 +10,7 @@ export const Container = styled.aside<isVisibleProps>`
   background-color: ${(props) => props.theme.colors.secondary};
   border-radius: 0px ${(props) => props.theme.borders.md}
     ${(props) => props.theme.borders.md} 0px;
-
+  overflow: auto;
   transition: transform 0.3s ease-in-out;
   padding: 16px;
   color: white;

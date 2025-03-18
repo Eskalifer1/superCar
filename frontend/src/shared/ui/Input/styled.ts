@@ -15,6 +15,7 @@ export const Container = styled.div<StyledInputContainerProps>`
   border: 1px solid ${({ theme }) => theme.colors.secondary};
   border-radius: ${({ theme }) => theme.borders.sm};
   background-color: ${({ theme }) => theme.colors.background};
+  color: ${({ theme }) => theme.colors.backgroundContrast};
   transition: border-color 0.3s;
 
   &:focus-within {

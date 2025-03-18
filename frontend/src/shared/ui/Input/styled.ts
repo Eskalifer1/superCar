@@ -15,7 +15,6 @@ export const Container = styled.div<StyledInputContainerProps>`
   border: 1px solid ${({ theme }) => theme.colors.secondary};
   border-radius: ${({ theme }) => theme.borders.sm};
   background-color: ${({ theme }) => theme.colors.background};
-  color: ${({ theme }) => theme.colors.backgroundContrast};
   transition: border-color 0.3s;
 
   &:focus-within {
@@ -36,7 +35,7 @@ export const Input = styled.input<StyledInputProps>`
   background: transparent;
   font-family: inherit;
   font-size: ${({ theme }) => theme.fontSizes.medium};
-  color: ${({ theme }) => theme.colors.text};
+  color: ${({ theme }) => theme.colors.backgroundContrast};
   padding: 8px 12px;
 
   ${({ $hasStartAdornment }) =>
